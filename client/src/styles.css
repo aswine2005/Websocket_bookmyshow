@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background: #020617;
+  color: white;
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+}
+
+.header {
+  background: #111827;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.seat {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.seat.AVAILABLE { background: #22c55e; }
+.seat.HELD { background: #facc15; }
+.seat.BOOKED { background: #ef4444; }
+
+.booking-panel {
+  background: #111827;
+  padding: 16px;
+  margin: 12px;
+  border-radius: 8px;
+}
+
+.confirm {
+  background: #22c55e;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+.cancel {
+  background: #ef4444;
+  padding: 10px;
+  border: none;
+}
+
+.username-gate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.username-gate input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.username-gate button {
+  padding: 10px 16px;
+  font-weight: bold;
+}
